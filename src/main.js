@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 // const hostname = 'https://normal-template-alpha.vercel.app/';
-const port = 100;
+const port = process.env.PORT || 3000;
 
 //morgan (http logger)
 app.use(morgan("combined"));
@@ -22,5 +22,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running at port:/`);
+  console.log(`Server running on port ${port}`);
 });
+
