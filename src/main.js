@@ -22,5 +22,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(hostname, () => {
-  console.log(`Server running at http://${hostname}:/`);
+  console.log(`Server running at ${hostname}:/`);
 });
