@@ -21,6 +21,6 @@ app.get('/', (req, res) => {
   res.render('products');
 });
 
-app.listen(port, hostname, () => {
+app.listen(hostname, () => {
   console.log(`Server running at http://${hostname}:/`);
 });
