@@ -4,8 +4,8 @@ const { engine } = require('express-handlebars');
 const path = require('path');
 
 const app = express();
-const hostname = 'https://normal-template-alpha.vercel.app/';
-// const port = 100;
+// const hostname = 'https://normal-template-alpha.vercel.app/';
+const port = 100;
 
 //morgan (http logger)
 app.use(morgan("combined"));
@@ -21,6 +21,6 @@ app.get('/', (req, res) => {
   res.render('products');
 });
 
-app.listen(hostname, () => {
-  console.log(`Server running at ${hostname}:/`);
+app.listen(port, () => {
+  console.log(`Server running at port:/`);
 });
