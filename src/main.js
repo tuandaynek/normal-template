@@ -4,7 +4,7 @@ const { engine } = require('express-handlebars');
 const path = require('path');
 
 const app = express();
-const hostname = 'normal-template-a8xrl6gj6-tuancodennlts-projects.vercel.app';
+const hostname = 'https://normal-template-alpha.vercel.app/';
 // const port = 100;
 
 //morgan (http logger)
